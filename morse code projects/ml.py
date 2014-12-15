@@ -1,4 +1,5 @@
-import RPi.GPIO as GP,time 
+import RPi.GPIO as GP #imports RPi.GPIO and calls it GP
+import time #imports time
 GP.setmode(GP.BOARD)
 GP.setup(11,GP.OUT)
 

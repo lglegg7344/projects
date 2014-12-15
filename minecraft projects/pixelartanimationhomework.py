@@ -1,14 +1,18 @@
+#imports mcpi.minecraft and calls it minecraft
 import mcpi.minecraft as minecraft
+#imports time
 import time
+#gives minecraft.Minecratft.create() the name mc 
 mc = minecraft.Minecraft.create()
 
+#giving the item ID a name (colour)
 red = 14
 orange = 1
 blue = 3
 lime = 5
 cyan = 9
 
-mc.setBlocks(-30,-5,-30,30,60,30,0)
+mc.setBlocks(-30,-5,-30,30,60,30,0) #clearing area to build space invader
 
 while True: #creates infinite loop
 

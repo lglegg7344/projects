@@ -1,8 +1,8 @@
-import mcpi.minecraft as minecraft
-import time
-mc = minecraft.Minecraft.create()
+import mcpi.minecraft as minecraft #imports mcpi.minecraft and calls it minecraft
+import time #imports time
+mc = minecraft.Minecraft.create() #gives minecraft.Minecraft.create() the name mc
 
-time.sleep(5)
+time.sleep(5) #pauses for 5 seconds
 
 for location in (0,2,4,6,8,10):
     mc.setBlock(location,0,0,22)
@@ -31,5 +31,3 @@ time.sleep(5)
 for step in range(5,11):
     mc.setBlock(40,step,step,22)
     time.sleep(2)
-
-

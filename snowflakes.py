@@ -1,5 +1,5 @@
-import turtle
-import random
+import turtle #imports turtle
+import random #imports random
 
 wn = turtle.Screen()
 wn.bgcolor("cyan")
@@ -42,5 +42,5 @@ while True:
         elsa.pendown()
         snowflake(sf_size)
  
-wn.exitonclick()  
+wn.exitonclick()  #when window is clicked, it closes
 

@@ -1,14 +1,20 @@
+#imports all needed
 import mcpi.minecraft as minecraft
 import time
+#renames minecraft.Minecraft.create() as mc
 mc = minecraft.Minecraft.create()
 
+#giving the item ID the name of the colour
 red = 14
 black = 15
 
+#clears out an area for the space invader to be built
 mc.setBlocks(-30,-5,-30,30,60,30,0)
 
+#makes a black background
 mc.setBlocks(0,-1,0,12,9,0,35,black)
 
+#builds the space invader
 for location in (4,5,7,8):
     mc.setBlock(location,0,0,35,red)
 for location in (1,3,9,11):

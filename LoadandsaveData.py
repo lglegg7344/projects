@@ -81,7 +81,7 @@ def getUserInfo(): #defines getUserInfo()
 
 def LoadData():
     try:
-        with open ("guess_who_data.txt",mode='rb') as file:
+        with open ("guess_who_data.txt",mode='r') as file:
             data = json.load(file)
 
     except IOError:
@@ -92,8 +92,8 @@ def LoadData():
 
 def StoreData():
     person = getUserInfo()
-    people.append(input)
-    with open ("guess_who_data.txt",mode='wb') as file:
+    people.append(person)
+    with open ("guess_who_data.txt",mode='w') as file:
         json.dump(people,file)
 
 people = LoadData()

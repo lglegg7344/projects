@@ -1,5 +1,4 @@
-import json
-
+import json #imports json
 import time #imports time
 import picamera #imports picamera
 
